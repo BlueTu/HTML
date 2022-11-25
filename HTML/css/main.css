@@ -1,0 +1,32 @@
+body {
+    font-family:Microsoft JhengHei; 
+    margin: 5px 50px 5px 50px;
+  }
+
+.pg1_bigtitle{
+  font-size: 26px;
+  font-weight: bold;
+  color: green;
+  background-color: rgb(186, 247, 227);
+  border: 3px green solid;
+  text-align: center;
+}
+
+.pg1_rowtitle{
+    font-size: 20px;
+    color:brown;
+}
+
+.pg1_texttitle{
+  background-color: yellow;
+}
+
+.pg1_classsample{
+  color: yellow;
+  background-color: black;
+}
+
+#pg1_idsample{
+  color: red;
+  background-color: #a88ede;
+}

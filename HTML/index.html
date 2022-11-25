@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- meta=對此網頁的附加描述 -->
+        <meta charset="utf-8"/> <!-- 網頁編碼 -->
+        <meta name="descripion" content="我的網站，紀錄筆記"/> <!-- 網頁描述 -->
+        <meta name="author" content="Cookie"/> <!-- 網頁作者 -->
+        <meta name="keywords" content="Cookie, html, note"/> <!-- 網頁關鍵字 -->
+        <meta name="viewport" contecnt="width=device-width, initial-scale=1.0"/> <!-- 視口：根據瀏覽裝置寬度會自行調整畫面、進入網頁初始縮放比例100% -->
+        <!-- 引入外部CSS檔案 -->
+        <link href="css/main.css" rel="stylesheet"> <!-- rel=關聯；stylesheet=樣式表文件 -->
+        <title>HelloWorld</title>
+    </head>
+    <br>
+        <h1 style="text-align:center">HTML相關筆記</h1>
+        <hr>
+        
+        <br/>
+        <div class="pg1_bigtitle">A.基本概念</div>
+
+            <!-- div容器&span容器 -->
+            <div>
+                <br/><br/><br/>
+                <div class="pg1_rowtitle">【div容器&span容器】</div><br/>
+                <ul>
+                    <li>"a"標籤占用剛好寬度，預設display參數inline</li>
+                    <li>"p"標籤占用整行，預設display參數是block</li>
+                    <li>"span"標籤占用剛好寬度</li>
+                    <li>"div"標籤占用整行</li>
+                </ul>
+            </div>
+            
+        <br/><br/>
+        <div class="pg1_bigtitle">B.基礎格式</div>
+
+            <!-- 列表&表格 -->
+            <div>
+                <br/><br/><br/>
+                <div class="pg1_rowtitle">【列表&表格】</div><br/>
+                <span class="pg1_texttitle">[點點項目符號]</span>
+                <ul>
+                    <li>Google</li>
+                    <li>Ig</li>
+                </ul>
+                <span class="pg1_texttitle">[數字項目符號]</span>
+                <ol type="A">
+                    <li>Google</li>
+                    <li>Ig</li>
+                </ol>
+                <span class="pg1_texttitle">[表格]</span>
+                <table width="300px" border="1">
+                    <tr>
+                        <td>1-1</td>
+                        <td>1-2</td>
+                    </tr>
+                    <tr>
+                        <td>2-1</td>
+                        <td>2-2</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- 輸入標籤 -->
+            <div>
+                <br/><br/><br/>
+                <div class="pg1_rowtitle">【輸入標籤】</div><br/>
+                <ul>
+                    <li>placeholder參數=顯示提示文字</li>
+                </ul>
+                <table border="1">
+                    <tr>
+                        <td><span class="pg1_texttitle">type=test</span></td>
+                        <td>帳號：<input type="text" placeholder="請輸入帳號"/></td>
+                    </tr>
+                    <tr>
+                        <td><span class="pg1_texttitle">type=password</span></td>
+                        <td>密碼：<input type="password" placeholder="請輸入密碼"/></td>
+                    </tr>
+                    <tr>
+                        <td><span class="pg1_texttitle">type=date</span></td>
+                        <td>日期：<input type="date"/></td>
+                    </tr>
+                    <tr>
+                        <td><span class="pg1_texttitle">type=range</span></td>
+                        <td>範圍：<input type="range"/></td>
+                    </tr>
+                    <tr>
+                        <td><span class="pg1_texttitle">type=file</span></td>
+                        <td>上傳檔案：<input type="file"/></td>
+                    </tr>
+                    <tr>
+                        <td><span class="pg1_texttitle">type=checkbox</span></td>
+                        <td><input type="checkbox"/>是否需要購物呆</td>
+                    </tr>
+                    <tr>
+                        <td><span class="pg1_texttitle">textarea(自由輸入)</span></td>
+                        <td>備註：<textarea>預設文字</textarea></td>
+                    </tr>
+                </table>
+            </div>
+
+        <br/><br/>
+        <div class="pg1_bigtitle">C.版面配置</div>
+
+            <!-- CSS：padding&margin -->
+            <div>
+                <br/><br/><br/>
+                <div class="pg1_rowtitle">【CSS：padding&margin】</div><br/>
+                <span class="pg1_texttitle">[正常框框]</span>
+                <div style="background-color:rgb(244, 183, 183) ; border:1px solid black;">Hello</div>
+                <span class="pg1_texttitle">[padding30框框]</span>
+                <div style="padding:30px; background-color:rgb(244, 183, 183) ; border:1px solid black;">Hello, This is "padding"</div>
+                <span class="pg1_texttitle">[margin30框框]</span>
+                <div style="margin:30px; background-color:rgb(244, 183, 183) ; border:1px solid black;">Hello, This is "margin"</div>
+            </div>
+
+            <!-- CSS：float -->
+            <div>
+                <br/><br/><br/>
+                <div class="pg1_rowtitle">【CSS：float】</div><br/>
+
+                <ul>
+                    <li>(預設設定為底框標籤在下，內容文字在上)</li>
+                    <li>float可把指定的標籤移至上層，<br/>此範例將img標籤上移，導致下方'p'標籤與文字往上行跑，<br/>但'p'標籤文字會被圖片擠壓，往後接著排序</li>
+                </ul>
+                <div style="border:1px black solid;">
+                <span class="pg1_texttitle">[未加float參數]</span>
+                <br/><img src="images/BearTab.png"/>
+                <p>喂！這裡是阿熊！不是漢堡王！喂！這裡是阿熊！不是漢堡王！喂！這裡是阿熊！不是漢堡王！</p>
+                </div>
+                <div style="border:1px black solid; height: 110px;">
+                <span class="pg1_texttitle">[加float參數]</span>
+                <br/><img src="images/BearTab.png" style="float:left;"/>
+                <p>喂！這裡是阿熊！不是漢堡王！喂！這裡是阿熊！不是漢堡王！喂！這裡是阿熊！不是漢堡王！</p>
+                </div>
+            </div>
+
+            <!-- CSS：position -->
+            <div>
+                <br/><br/><br/>
+                <div class="pg1_rowtitle">【CSS：position】</div><br/>
+                <span class="pg1_texttitle">[position: stati，預設正常框框]</span>
+                <div style="width:60px; height:60px; background-color:blue; color:white;">我是正常方塊</div><br/>
+                <span class="pg1_texttitle">[position:fixed，固定框框(已先註解隱藏)]<br/>層級上移且固定定位，捲動網頁時永遠在瀏覽器畫面的同個位置上</span>
+                <!-- <div style="position:fixed; bottom:20px; width:60px; height:60px; background-color:blue;">固定定位</div> -->
+                <br><br><span class="pg1_texttitle">[position:relative，相對定位]<br/>層級不會上移，只在原本預設顯示的地方相對偏移</span>
+                <div style="position:relative; left:20px; width:60px; height:60px; background-color:blue; color:white;">相對定位</div><br/>
+                <span class="pg1_texttitle">[position:absolute，絕對定位]<br/>層級上移，但捲動網頁時不會跟著動，且如果用外層標籤包住，就會以外層標籤為計算位置的標準</span>
+                <div style="position:relative; padding:30px; border:3px solid red;">
+                        <div style="position:absolute; bottom:0px; left:0px; width:80px; height:80px; background-color:blue; color:white;">絕對定位1</div>
+                        <div style="position:relative; padding:30px; border:3px solid palevioletred;">
+                            <div style="position:absolute; bottom:0px; right:0px; width:80px; height:80px; background-color:blue; color:white;">絕對定位2</div>
+                        </div>
+                </div><br/>
+            </div>
+            
+            <!-- CSS：opacity&border-radius -->
+            <div>
+                <br/><br/><br/>
+                <div class="pg1_rowtitle">【CSS：opacity&border-radiusn】</div><br/>
+                <span class="pg1_texttitle">[style=opacity]<br/>物件透明度，數值範圍0~1</span>
+                <p style="position:relative; top:65px; left: 15px;">透明度</p>
+                <div style="opacity: 0.4; width:80px; height:80px; background-color:blue;"></div><br/>
+                <span class="pg1_texttitle">[style=border-radius]<br/>物件邊角圓弧，可以分別4個角個別設定</span>
+                <div style="border-radius: 20px; width:80px; height:80px; background-color:blue; color: white; text-align: center;">邊角圓弧</div><br/>
+            </div>
+
+            <!-- class&id -->
+            <div>
+                <br/><br/><br/>
+                <div class="pg1_rowtitle">【class&id】</div><br/>
+                <div class="pg1_classsample">使用class</div>
+                <div id="pg1_idsample">使用id</div>
+            </div>
+
+        <br/><br/>
+        <div class="pg1_bigtitle">D.外部多媒體</div>
+
+            <!-- 圖片&連結 -->
+            <div>
+                <div class="pg1_rowtitle">【圖片&連結】</div><br/>
+                <span class="pg1_texttitle">[直接放置Local圖片]</span><br/>
+                <img src="images/BearTab.png" height="36px"></img><br/>
+                <span class="pg1_texttitle">[開啟圖片連結]</span><br/>
+                <a href="images/BearTab.png">點擊開啟</a>
+            </div>
+            
+            <!-- 影片&嵌入 -->
+            <div>
+                <br/><br/><br/>
+                <div class="pg1_rowtitle">【影片&嵌入】</div><br/>
+                <span class="pg1_texttitle">[直接放置Local影片]</span><br/>
+                <video src="images/SkyVideo.mp4" controls width="445" height="250"></video><br/> <!-- controls參數，顯示影音控制列 -->
+                <span class="pg1_texttitle">[嵌入Youtube影片]</span><br/>
+                <iframe width="445" height="250" src="https://www.youtube.com/embed/CLUPkcLQm64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+    </body>
+</html>
